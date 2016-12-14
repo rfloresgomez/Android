@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="roberto.baloncesto.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/marcadorLocal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorNegro">
+
+                <TextView
+                    android:id="@+id/local"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAmarillo"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/local"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textSize="@dimen/titulos" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/marcadoresLargo"
+                    android:layout_height="@dimen/marcadoresAlto"
+                    android:layout_below="@id/local"
+                    android:layout_centerHorizontal="true">
+
+                    <TextView
+                        android:id="@+id/puntosLocal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorRojo"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/puntuacionLocal"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textSize="@dimen/puntuacion" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/botonesLocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/marcadorLocal"
+                android:layout_centerHorizontal="true">
+
+                <Button
+                    android:id="@+id/mas3Local"
+                    android:layout_width="@dimen/botones"
+                    android:layout_height="@dimen/botones"
+                    android:background="@drawable/balon3" />
+
+                <Button
+                    android:id="@+id/mas2Local"
+                    android:layout_width="@dimen/botones"
+                    android:layout_height="@dimen/botones"
+                    android:layout_toRightOf="@id/mas3Local"
+                    android:background="@drawable/balon2" />
+
+                <Button
+                    android:id="@+id/mas1Local"
+                    android:layout_width="@dimen/botones"
+                    android:layout_height="@dimen/botones"
+                    android:layout_toRightOf="@id/mas2Local"
+                    android:background="@drawable/balon1" />/>
+
+                <Button
+                    android:id="@+id/menos1Local"
+                    android:layout_width="@dimen/botones"
+                    android:layout_height="@dimen/botones"
+                    android:layout_toRightOf="@id/mas1Local"
+                    android:background="@drawable/balon5" />/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/botonesLocal"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:paddingTop="@dimen/margenNombres">
+
+                <TextView
+                    android:id="@+id/textNombreLocal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/nombre" />
+
+                <EditText
+                    android:id="@+id/nombreLocal"
+                    android:layout_width="@dimen/nombreW"
+                    android:layout_height="@dimen/nombreH"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/textNombreLocal" />
+
+                <Button
+                    android:id="@+id/botonNombreLocal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/nombreLocal"
+                    android:text="@string/cambiar" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="15px"
+        android:layout_height="match_parent"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/marcadorVisitante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorNegro">
+
+                <TextView
+                    android:id="@+id/visitante"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/visitante"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/colorAmarillo"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/titulos" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/marcadoresLargo"
+                    android:layout_height="@dimen/marcadoresAlto"
+                    android:layout_below="@id/visitante"
+                    android:layout_centerHorizontal="true">
+
+                    <TextView
+                        android:id="@+id/puntosVisitante"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/puntuacionVisitante"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/colorRojo"
+                        android:textSize="@dimen/puntuacion" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/botonesVisitante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/marcadorVisitante"
+                android:layout_centerHorizontal="true">
+
+                <Button
+                    android:id="@+id/menos1Visitante"
+                    android:layout_width="@dimen/botones"
+                    android:layout_height="@dimen/botones"
+                    android:background="@drawable/balon5" />
+
+                <Button
+                    android:id="@+id/mas1Visitante"
+                    android:layout_width="@dimen/botones"
+                    android:layout_height="@dimen/botones"
+                    android:layout_toRightOf="@id/menos1Visitante"
+                    android:background="@drawable/balon1" />
+
+                <Button
+                    android:id="@+id/mas2Visitante"
+                    android:layout_width="@dimen/botones"
+                    android:layout_height="@dimen/botones"
+                    android:layout_toRightOf="@id/mas1Visitante"
+                    android:background="@drawable/balon2" />/>
+
+                <Button
+                    android:id="@+id/mas3Visitante"
+                    android:layout_width="@dimen/botones"
+                    android:layout_height="@dimen/botones"
+                    android:layout_toRightOf="@id/mas2Visitante"
+                    android:background="@drawable/balon3" />/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/botonesVisitante"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:paddingTop="@dimen/margenNombres">
+
+                <TextView
+                    android:id="@+id/textNombreVisitante"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/nombre" />
+
+                <EditText
+                    android:id="@+id/nombreVisitante"
+                    android:layout_width="@dimen/nombreW"
+                    android:layout_height="@dimen/nombreH"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/textNombreVisitante" />
+
+                <Button
+                    android:id="@+id/botonNombreVisitante"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/nombreVisitante"
+                    android:text="@string/cambiar" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

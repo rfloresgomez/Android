@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Baloncesto</string>
+    <string name="local">LOCAL</string>
+    <string name="visitante">VISITANTE</string>
+    <string name="puntuacionLocal">0</string>
+    <string name="puntuacionVisitante">0</string>
+    <string name="mas3">+3</string>
+    <string name="mas2">+2</string>
+    <string name="mas1">+1</string>
+    <string name="menos1">-1</string>
+    <string name="nombre">Nombre: </string>
+    <string name="cambiar">Cambiar</string>
+</resources>
